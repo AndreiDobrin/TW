@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Animation on Button Click</title>
+  <style>
+    /* Basic setup */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Hidden checkbox to trigger the animation */
+    #animate-checkbox {
+      display: none;
+    }
+
+    /* Button styling */
+    label {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1.2em;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    label:hover {
+      background-color: #45a049;
+    }
+
+    /* Animated square */
+    .square {
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      background-color: #2196F3;
+      transition: transform 1s ease, background-color 1s ease;
+      transform: scale(1);
+    }
+
+    /* Trigger animation when checkbox is checked */
+    #animate-checkbox:checked ~ .square {
+      transform: scale(1.5) rotate(45deg);
+      background-color: #ff5722;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Checkbox for toggling the animation -->
+  <input type="checkbox" id="animate-checkbox">
+
+  <!-- Label styled as a button -->
+  <label for="animate-checkbox">Animate Square</label>
+
+  <!-- Square that will animate -->
+  <div class="square"></div>
+
+</body>
+</html>
