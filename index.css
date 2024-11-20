@@ -47,12 +47,13 @@ header {
  /* Dropdown Button */
  .dropbtn {
     display:inline-flex;
+    color:#dcdbd9;
     vertical-align:middle;
-    height:35px;
-    width:35px;
-    background:transparent;
+    background:blue;
     border:0;
-    margin-top:30px;
+    padding:20px;
+    border-radius:20px;
+    margin-top:20px;
  
     }
   
@@ -77,6 +78,7 @@ header {
     padding: 12px 16px;
     text-decoration: none;
     display:block;
+    border-radius:5px;
   }
   
   /* Change color of dropdown links on hover */
@@ -130,7 +132,7 @@ header {
   height:100%; 
   padding-bottom:70%;
   overflow:hidden; 
-  display:flex; 
+  display:flex;
 }
 .slideshow img{ 
   position:absolute; 
@@ -141,7 +143,24 @@ header {
 }
 
 .choices {
-  color:whitesmoke;
+  background:blue;
+  border:0;
+  color:#dcdbd9;
+  display:inline-flex;
+  border-radius:30px;
+  position:relative;
+  margin-left:42%;
+}
+.choice1{
+  background:transparent;
+  border:0;
+  color:#dcdbd9;
+  display:inline-flex;
+  padding:20px;
+  font-size:large;
+}
+.choices:hover {
+  background:#243fa2;
 }
 
 @keyframes slideshow {25%{opacity:1;} 40%{opacity:0;}}
