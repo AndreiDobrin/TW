@@ -1,0 +1,337 @@
+@media (min-width:769px){
+    .size1{
+      animation: typing ease-out 0.75s;
+      white-space: nowrap;
+  }
+  .choices{
+    margin-left:42%;
+  }
+  .titlu{
+    display:inline-flex;
+  }
+  }
+  @media (max-width:768px){
+    .titlu{
+    display:inline-flex;
+  }
+    .fade1{
+      margin-top:100px;
+    }
+    .choices{
+      margin-left:30%;
+    }
+    }
+  @media (max-width:300px){
+    .titlu{
+      display:none;
+    }
+    #dropbtn{
+      display:flex;
+    }
+    .choices{
+      margin-left:0%;
+    }
+  }
+  @media (max-width:100px){
+    .logo{
+      display:none;
+    }
+  
+  
+  }
+  #slideshou_left, #slideshou_right {
+    position:absolute;
+    border: none;
+    background-color: gray;
+    opacity:50%;
+    color:#dcdbd9;
+    border-radius:25px;
+    border: none;
+    padding: 10px 20px;
+    animation: none;
+    z-index: 1;
+    width:50px;
+    height:80px;
+    
+  }
+  #slideshou_right {
+    right: 0px;
+  }
+  #slideshou_left:hover, #slideshou_right:hover{
+    transition-duration: 0.2s;
+    background:#243fa2;
+    opacity:90%;
+  }
+  
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #181a1b;
+    color:#dcdbd9;
+  }
+  header {
+    background-color: #001c3a;
+    margin-left:-10px;
+    margin-top:-10px;
+    margin-right:-10px; 
+    border-bottom: 1px solid #4f4e4b;
+    display:flex;
+  }
+  .logo {
+    display:flex;
+    vertical-align:middle;
+    height:100px;
+   }
+  .titlu {
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 30px;
+  
+  }
+   /* Dropdown Button */
+   #dropbtn {
+      display:inline-flex;
+      color:#dcdbd9;
+      vertical-align:middle;
+      background:blue;
+      border:0;
+      padding:20px;
+      border-radius:20px;
+      margin-top:20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size:20px;
+   
+      }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position:absolute;
+      background-color: #001227;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: #dcdbd9;
+      padding: 12px 16px;
+      text-decoration: none;
+      display:block;
+      border-radius:5px;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #243fa2;}
+    
+    /* Show the dropdown menu on hover 
+    .dropdown:hover .dropdown-content {display: block;}
+    */
+    .dropdown:hover .dropdown-content {display:block;}
+    /* Change the background color of the dropdown button when the dropdown content is shown 
+    .dropdown:hover #dropbtn {background-color: #3e8e41;} */
+  
+  
+  .size1{
+    display:flex;
+    position:relative;
+    overflow:hidden;
+    justify-content:left;
+    height:100%;
+    width:100%;
+    animation: typing;
+    animation-duration: 3s;
+  }
+  
+  
+  .fade1,.fade2,.fade3,.fade4{
+    transform:translateY(50%);
+    font-family:Arial;
+    font-size:20px;
+    opacity:0;
+    animation: fadeIn 5s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    display:flex;
+    justify-content:left;
+    margin-bottom:1em;
+  }
+  .fade1{
+    animation-delay:1s;
+  }
+  .fade2{
+    animation-delay: 3s;
+  }
+  .fade3{
+    animation-delay: 5s;
+  }
+  .fade4{
+    animation-delay: 7s;
+  }
+  
+  .slideshow {
+    width:100%;
+    height:100%; 
+    padding-bottom:70%;
+    overflow:hidden; 
+    display:flex;
+  }
+  .slideshow img{ 
+    
+    position:absolute;
+    width: 100%; 
+    height: 100%;
+    
+    animation:slideshow 20s infinite; 
+    
+    /*
+    display:flex;
+    width:300px;
+    height:300px; 
+    */
+    opacity:0; 
+  }
+  
+  
+  
+  .choices {
+    background:blue;
+    border:0;
+    color:#dcdbd9;
+    display:inline-flex;
+    border-radius:30px;
+    position:relative;
+  }
+  .choice1{
+    background:transparent;
+    border:0;
+    color:#dcdbd9;
+    display:inline-flex;
+    padding:20px;
+    font-size:large;
+  }
+  .choices:hover {
+    transition-duration: 0.2s;
+    background:#243fa2;
+  }
+  
+  @keyframes slideshow {25%{opacity:1;} 40%{opacity:0;}}
+  .slideshow img:nth-child(1){animation-delay:0s;}
+  .slideshow img:nth-child(2){animation-delay:5s;}
+  .slideshow img:nth-child(3){animation-delay:10s;}
+  .slideshow img:nth-child(4){animation-delay:15s;}
+  
+  
+  
+  @keyframes fadeIn {
+    0% { 
+      opacity:0;
+      transform: translateY(50%);
+        }
+    100% {
+      opacity: 1;
+      transform: translateY(-25%);
+    }
+  }
+  
+  @keyframes typing {
+    from {width:0%;}
+    to {width:100%}
+  }
+  
+  
+  /* for button operation */
+  @keyframes slideshow_in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  
+  }
+  @keyframes slideshow_out {
+    from {opacity: 100%;}
+    to {opacity: 0%;}  
+  }
+  
+
+.txt{
+    padding-left: 20px;
+}
+#img_casa1{
+    height:auto;
+    width:80%;
+    align-self: center;
+}
+
+.perkscasa{
+    display:flex;
+    flex-direction:column;
+}
+
+#perks {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+
+.buycontainer {
+    display:inline-flex;
+    
+}
+
+#buy, #reset {
+    color:#dcdbd9;
+    vertical-align:middle;
+    background:blue;
+    border:0;
+    padding:20px;
+    border-radius:20px;
+    margin-top:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px;
+
+    height:64px;
+    margin-left:20px;
+}
+
+#chat {
+    margin-top:44px;
+    margin-left:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px;
+}
+
+#buy:hover, #reset:hover, #dropbtn:hover{
+    transition:0.2s;
+    background-color:darkblue;
+}
+
+#img1 {
+    position:absolute;
+    opacity: 0;
+
+}
+
+#img1, #img2{
+    margin-right:40px;
+    height:auto;
+    width:40%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+

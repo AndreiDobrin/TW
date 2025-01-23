@@ -1,0 +1,42 @@
+#slideshow1 {
+    opacity: 0%;
+}
+#slideshow2,#slideshow3,#slideshow4 {
+    opacity: 0%;
+}
+
+#slideshow1, #slideshow2, #slideshow3, #slideshow4 {
+    /*
+    animation: slideshow 20s infinite;
+    /*
+    position: absolute;
+    */
+    display:inline-flex;
+    animation-fill-mode:forwards;
+}
+
+@keyframes slideshow {
+    25%{opacity:1;}
+    40%{opacity:0;}
+}
+
+.slideshow69 {
+    height: 300px;
+    width: 300px;
+}
+
+.btn {
+    margin-top:10px;
+}
+
+@keyframes slideshow_in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+
+}
+@keyframes slideshow_out {
+    from {opacity: 100%;}
+    to {opacity: 0%;}  
+}
+
+
